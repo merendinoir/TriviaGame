@@ -7,54 +7,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css" class="rel">
+
+     <!-- jQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <!-- div for all content on page - ie title/start button and later questions/timer -->
+    <!-- main container for content -->
 <div class="container mainDiv">
+    <!-- row 1 -->
     <div class="row">
         <div class="col-md-12">
             <h1 id="gameTitle">Totally Trivial Trivia</h1>
             <hr>
-            <h6 style="text-align:center">Press start to begin the quiz. <br> Watch the timer!</h6>
+        </div> 
+    </div> <!-- close of row with gameTitle -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <h6 class="instructions">Press start to begin the quiz. <br> Watch the timer!</h6>
+
+            <div id="show-timer"></div>
+
             <hr>
         </div>
-    </div><!-- close of row with gameTitle -->
+    </div>
 
 
 
-    <!-- start button -->
+    <!-- row 2 and start button -->
     <div class="form-row text-center">
         <div class="col-md-12">
             <button type="button" class="btn btn-info" id="beginGame">Start</button>
         </div>
     </div>
-
-
         
-
-        
+    <!-- empty, row 3 for spacing -->
     <div class="row">
-        <div class="col-md-12">
-            
-        </div>
+        <div class="col-md-12"></div>
     </div>
 
+    <!-- row 4 -->
     <div class="row">
-            <div class="col-md-12" id="quizDiv">
+        <div class="col-md-12" id="quizDiv">
             <!-- questions/answers populate here-->
         </div>
-        </div>
+    </div>
 
 
 
