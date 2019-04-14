@@ -12,7 +12,7 @@
 
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css" class="rel">
@@ -21,20 +21,40 @@
 <body>
 
     <!-- div for all content on page - ie title/start button and later questions/timer -->
-    <div class="container mainDiv">
-        <div class="row">
-            <div class="col-md-12" style="border: 2px solid blue">
-                <h1 id="gameTitle">Totally Trivial Trivia</h1>
-            </div>
-        </div><!-- close of row with gameTitle -->
-
-        <div class="row">
-            <div class="col-md-12">
-                <!-- start button -->
-                <button style="align-content: center">Start!</button>
-            </div>
+<div class="container mainDiv">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 id="gameTitle">Totally Trivial Trivia</h1>
+            <hr>
+            <h6 style="text-align:center">Press start to begin the quiz. <br> Watch the timer!</h6>
+            <hr>
         </div>
+    </div><!-- close of row with gameTitle -->
 
+
+
+    <!-- start button -->
+    <div class="form-row text-center">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-info" id="beginGame">Start</button>
+        </div>
+    </div>
+
+
+        
+
+        
+    <div class="row">
+        <div class="col-md-12">
+            
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-md-12" id="quizDiv">
+            <!-- questions/answers populate here-->
+        </div>
+        </div>
 
 
 

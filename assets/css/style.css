@@ -1,8 +1,8 @@
 /* actual sxns */
 body {
-    background-image:url(https://smartstoreinc.com/wp-content/uploads/2018/09/maxresdefault.jpg);
+    background-image:url(https://us.123rf.com/450wm/sunspire/sunspire1605/sunspire160500434/57120977-vector-modern-abstract-geometry-psychadelic-pattern-black-and-white-seamless-geometric-crazy-backgro.jpg?ver=6);
     background-repeat: repeat;
-    background-size: 50%;
+    background-size: 30%;
 }
 /* Classes */
 .mainDiv {
@@ -17,4 +17,9 @@ body {
 #gameTitle {
     text-align: center;
     margin: 20px;
+    color: #17a2b8;
 }
+
+/* #beginGame {
+
+} */
