@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("#quizDiv").hide();
 
 // create an array of questions, as an object
 
@@ -94,9 +95,24 @@ var questions = [
         correctAnswer: "B.	Crimean War",
     },
     ]; // end of questions array
+
 console.log(questions); 
+
+var quizDiv = $("#quizDiv");
+    console.log(quizDiv);
+for (var i = 0; i < questions.length; i++) {
+   newQuizP = $("<p>");
+   newQuizP.text(questions[i]);
+   quizDiv.append(newQuizP);
+    
+}
+
+
 var time = 300;
 var intervalID;
+
+
+
 
 
 
@@ -104,9 +120,8 @@ var intervalID;
 $("#beginGame").on("click", function(){
     $(".instructions").hide();
     $("#beginGame").hide();
-
-  
     $("#beginGame").on("click", run ());
+    $("#quizDiv").show();
 })
 
 function run () {
@@ -125,6 +140,8 @@ function decrement () {
 function stop () {
     clearInterval(intervalID);
 }
+
+
 
 
 
