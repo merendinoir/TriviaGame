@@ -17,54 +17,41 @@
      <!-- jQuery -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
-
-    <!-- main container for content -->
-<div class="container mainDiv">
+    <!-- bootstrap main container for content -->
+    <div class="container mainDiv">
     <!-- row 1 -->
     <div class="row">
         <div class="col-md-12">
             <h1 id="gameTitle">Totally Trivial Trivia</h1>
             <hr>
         </div> 
-    </div> <!-- close of row with gameTitle -->
+    </div> <!-- close of row 1 with gameTitle -->
 
-    <div class="row">
+    <div class="row"> <!-- row 2 -->
         <div class="col-md-12">
             <h6 class="instructions">Press start to begin the quiz. <br> Watch the timer!</h6>
-
-            <div id="show-timer"></div>
-
+            <div id="show-timer"><!-- Timer container --></div>
             <hr>
         </div>
     </div>
-
-
-
-    <!-- row 2 and start button -->
-    <div class="form-row text-center">
+  
+    <div class="form-row text-center"><!-- row 3 and start button -->
         <div class="col-md-12">
             <button type="button" class="btn btn-info" id="beginGame">Start</button>
         </div>
     </div>
-        
-    <!-- empty, row 3 for spacing -->
-    <div class="row">
+   
+    <div class="row"><!-- empty, row 4 for spacing -->
         <div class="col-md-12"></div>
     </div>
 
-    <!-- row 4 -->
-    <div class="row">
-        <div class="col-md-12" id="quizDiv">
-            <!-- questions/answers populate here-->
-        </div>
+    <div class="row"><!-- row 5 -->
+        <div class="col-md-12" id="quizDiv"><!-- questions/answers populate here--></div>
     </div>
 
 
-
-
-    </div> <!-- close of mainDiv -->
+    </div> <!-- close of bootstrap container/mainDiv -->
 
 
     <!-- JS link -->
